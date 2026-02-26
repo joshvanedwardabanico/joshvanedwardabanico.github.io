@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Portfolio | Sviluppatore</title>
+    <style>
+        /* CSS Minimalista */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #24292e; /* Colore stile GitHub */
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 { color: #0366d6; border-bottom: 2px solid #eaecef; padding-bottom: 0.3rem; }
+        .project { margin-bottom: 1rem; padding: 1rem; border-left: 4px solid #0366d6; background: #f8f9fa; }
+        .tag { background: #e1ecf4; color: #39739d; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.8rem; margin-right: 5px; }
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #666; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ciao, sono [Il Tuo Nome]</h1>
+    <p>Web Developer & Appassionato di Tecnologia</p>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>Profilo Professionale</h2>
+        <p>Aspirante <strong>Junior SOC Analyst</strong> con una forte passione per la Blue Teaming e l'analisi dei log. Mi dedico quotidianamente allo studio di minacce emergenti e alla risoluzione di macchine su piattaforme come TryHackMe e HackTheBox.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Hard Skills & Tools</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div>
+                <strong>Monitoraggio:</strong>
+                <p><span class="tag">Splunk</span> <span class="tag">Wireshark</span> <span class="tag">Suricata</span></p>
+            </div>
+            <div>
+                <strong>Networking:</strong>
+                <p><span class="tag">TCP/IP</span> <span class="tag">DNS Analysis</span> <span class="tag">VPN</span></p>
+            </div>
+            <div>
+                <strong>OS & Scripting:</strong>
+                <p><span class="tag">Linux/Bash</span> <span class="tag">PowerShell</span> <span class="tag">Python</span></p>
+            </div>
+            <div>
+                <strong>Framework:</strong>
+                <p><span class="tag">MITRE ATT&CK</span> <span class="tag">NIST</span> <span class="tag">Cyber Kill Chain</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Home Lab & Progetti</h2>
+        
+        <div class="project">
+            <h3>Home Lab SOC (Progetto Principale)</h3>
+            <p>Configurazione di un ambiente SIEM utilizzando lo stack ELK per monitorare il traffico di una rete locale e rilevare tentativi di Brute Force tramite Alert personalizzati.</p>
+            <p><a href="#">Dettagli Progetto su GitHub ➔</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Analisi Malware (Static Analysis)</h3>
+            <p>Report dettagliato sull'analisi di un sample Trojan, identificando persistence mechanisms e indicatori di compromissione (IoC).</p>
+            <p><a href="#">Leggi il PDF ➔</a></p>
+        </div>
+    </section>
+
+    <section id="certs">
+        <h2>Certificazioni & Formazione</h2>
+        <ul>
+            <li><strong>CompTIA Security+</strong> (In corso...)</li>
+            <li><strong>eJPTv2</strong> - Junior Penetration Tester</li>
+            <li><strong>Google Cybersecurity Professional Certificate</strong></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contatti & CTF</h2>
+        <p>Parliamo di sicurezza:</p>
+        <ul>
+            <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/tuonome</a></li>
+            <li><strong>TryHackMe:</strong> <a href="#">tryhackme.com/p/tuousername</a></li>
+            <li><strong>Email:</strong> <a href="mailto:cyber.analyst@email.it">cyber.analyst@email.it</a></li>
+        </ul>
+    </section>
+</div>
