@@ -3,109 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Portfolio | Sviluppatore</title>
-    <style>
-        /* CSS Minimalista */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: #333;
-            background-color: #f4f4f9;
-        }
-        header {
-            background: #24292e; /* Colore stile GitHub */
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background: #fff;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 { color: #0366d6; border-bottom: 2px solid #eaecef; padding-bottom: 0.3rem; }
-        .project { margin-bottom: 1rem; padding: 1rem; border-left: 4px solid #0366d6; background: #f8f9fa; }
-        .tag { background: #e1ecf4; color: #39739d; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.8rem; margin-right: 5px; }
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #666; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <title>Josh Van Edward Abanico | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <h1>Ciao, sono Josh Van Edward Abanicp</h1>
-    <p>Junior SOC Analyst & Appassionato di Tecnologia</p>
-</header>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">&lt;Josh /&gt;</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Chi Sono</a></li>
+                    <li><a href="#skills">Competenze</a></li>
+                    <li><a href="#projects">Progetti</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="container">
-    <section id="about">
-        <h2>Profilo Professionale</h2>
-        <p>Aspirante <strong>Junior SOC Analyst</strong> con una forte passione per la Blue Teaming e l'analisi dei log. Mi dedico quotidianamente allo studio di minacce emergenti e alla risoluzione di macchine su piattaforme come TryHackMe e HackTheBox.</p>
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>Ciao, sono <span>Josh Van Edward Abanico</span></h1>
+            <h2>Junior SOC Analyst | Cyber Defense Specialist</h2>
+            <p>Unisco un solido background in Ingegneria Informatica a oltre 400 ore di laboratori pratici su scenari reali di attacco e difesa. Analizzo, contengo e risolvo.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Guarda i Progetti</a>
+                <a href="#contact" class="btn btn-secondary">Contattami</a>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Hard Skills & Tools</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-            <div>
-                <strong>Monitoraggio:</strong>
-                <p><span class="tag">Splunk</span> <span class="tag">Wireshark</span> <span class="tag">Suricata</span></p>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Il Mio Percorso</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Sono un professionista della sicurezza informatica focalizzato sul Blue Teaming e l'Incident Response. Non mi limito a studiare la teoria: costruisco tool, configuro architetture sicure e analizzo le minacce sul campo.</p>
+                    <p>Il mio "Superpotere"? La resilienza. L'esperienza pregressa nella gestione logistica ad alta pressione mi ha abituato a mantenere la lucidità durante le emergenze, mentre gli anni di tutoring mi hanno insegnato a tradurre concetti tecnici complessi in report chiari e accessibili per qualsiasi team.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>400+</h3>
+                        <p>Ore di Laboratori Pratici</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Focus su SOC & Cyber Defense</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <strong>Networking:</strong>
-                <p><span class="tag">TCP/IP</span> <span class="tag">DNS Analysis</span> <span class="tag">VPN</span></p>
-            </div>
-            <div>
-                <strong>OS & Scripting:</strong>
-                <p><span class="tag">Linux/Bash</span> <span class="tag">PowerShell</span> <span class="tag">Python</span></p>
-            </div>
-            <div>
-                <strong>Framework:</strong>
-                <p><span class="tag">MITRE ATT&CK</span> <span class="tag">NIST</span> <span class="tag">Cyber Kill Chain</span></p>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-darker">
+        <div class="container">
+            <h2 class="section-title">Arsenale Tecnico</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Security & Defense</h3>
+                    <p>Splunk, pfSense, Suricata, Wireshark, Log Analysis, Incident Response</p>
+                </div>
+                <div class="skill-category">
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <h3>Offensive & OSINT</h3>
+                    <p>Metasploit, Burp Suite, Nmap, Nessus, SQLMap, OSINT Framework</p>
+                </div>
+                <div class="skill-category">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Sistemi & Reti</h3>
+                    <p>Kali Linux, Windows Server, TCP/IP, DNS, DHCP, Active Directory</p>
+                </div>
+                <div class="skill-category">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programmazione</h3>
+                    <p>Python, C, PHP, Bash Scripting, Automazione Sicurezza</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Home Lab & Progetti</h2>
-        
-        <div class="project">
-            <h3>Home Lab SOC (Progetto Principale)</h3>
-            <p>Configurazione di un ambiente SIEM utilizzando lo stack ELK per monitorare il traffico di una rete locale e rilevare tentativi di Brute Force tramite Alert personalizzati.</p>
-            <p><a href="#">Dettagli Progetto su GitHub ➔</a></p>
+        <div class="container">
+            <h2 class="section-title">Operazioni & Progetti</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="badge">Python / AI</span>
+                        <h3>BlockDaFish</h3>
+                        <p>Sviluppo di un tool Python con interfaccia grafica asincrona per il rilevamento proattivo di spear-phishing. Integra BeautifulSoup e l'API di Gemini (AI) per l'analisi semantica delle email e l'identificazione di pattern di social engineering.</p>
+                        <a href="https://github.com/joshvanedwardabanico/BlockDaFish" target="_blank" class="btn btn-small">Vedi su GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="badge">Network Security</span>
+                        <h3>Enterprise Network Defense</h3>
+                        <p>Progettazione e implementazione di un'infrastruttura di rete aziendale sicura tramite Cisco Packet Tracer. Configurazione di Firewall pfSense per la gestione del traffico e filtraggio accessi, unita a script Python per la verifica dell'integrità.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="badge">Offensive</span>
+                        <h3>End-to-end Penetration Testing</h3>
+                        <p>Conduzione di tre simulazioni "Blackbox" complete. Analisi e sfruttamento di vulnerabilità SQL Injection e XSS su piattaforme di test (DVWA) e compromissione di target Windows/Linux tramite Metasploit Framework.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="badge">Malware Analysis</span>
+                        <h3>Reverse Engineering in Practice</h3>
+                        <p>Analisi comportamentale di campioni malware in ambienti controllati (Sandbox). Attività di Reverse Engineering per comprendere la logica di esecuzione delle minacce ed estrarre Indicatori di Compromissione (IoC).</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-            <h3>Analisi Malware (Static Analysis)</h3>
-            <p>Report dettagliato sull'analisi di un sample Trojan, identificando persistence mechanisms e indicatori di compromissione (IoC).</p>
-            <p><a href="#">Leggi il PDF ➔</a></p>
+    <section id="contact" class="bg-darker">
+        <div class="container text-center">
+            <h2 class="section-title">Pronto per difendere la tua infrastruttura?</h2>
+            <p>Attualmente in cerca di sfide stimolanti all'interno di un Security Operation Center.</p>
+            <div class="contact-links">
+                <a href="mailto:joshvanedwardabanico@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/jvea" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/joshvanedwardabanico" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +39 3808620799</a>
+            </div>
         </div>
     </section>
 
-    <section id="certs">
-        <h2>Certificazioni & Formazione</h2>
-        <ul>
-            <li><strong>CompTIA Security+</strong> (In corso...)</li>
-            <li><strong>eJPTv2</strong> - Junior Penetration Tester</li>
-            <li><strong>Google Cybersecurity Professional Certificate</strong></li>
-        </ul>
-    </section>
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Josh Van Edward Abanico. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 
-    <section id="contact">
-        <h2>Contatti & CTF</h2>
-        <p>Parliamo di sicurezza:</p>
-        <ul>
-            <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/tuonome</a></li>
-            <li><strong>TryHackMe:</strong> <a href="#">tryhackme.com/p/tuousername</a></li>
-            <li><strong>Email:</strong> <a href="mailto:cyber.analyst@email.it">cyber.analyst@email.it</a></li>
-        </ul>
-    </section>
-</div>
+</body>
+</html>
